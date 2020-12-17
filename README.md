@@ -22,5 +22,16 @@ Extract:
 與VOCtrainval_06-Nov-2007/VOCdevkit/VOC2007/ImageSets/Main/trainval.txt   
 將test.txt與trainval.txt放入MobilenetV3_SSD/VOC2007/ImageSets/Main
 
-**二.生成 TEST_images.json,TEST_objects.json,TRAIN_images.json,TRAIN_objects.json**  
-先打開create_data_lists.py
+**二. 生成 TEST_images.json,TEST_objects.json,TRAIN_images.json,TRAIN_objects.json**  
+第4行的voc07_path='VOC2007'的 VOC2007為dataset資料夾名稱
+`python3 create_data_lists.py`
+
+**三. train**   
+`python3 train.py`  
+
+**四. evaluate**   
+`python3 eval.py`   
+
+**四. detect**   
+`python3 detect.py`   
+
